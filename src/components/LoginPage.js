@@ -1,5 +1,6 @@
 // LoginPage.js
 import * as React from 'react';
+import { useState } from 'react';
 import { Modal, Box, InputAdornment, IconButton, Stack, Alert, Typography } from '@mui/material';
 import { LoadingButton } from '@mui/lab';
 import { useForm } from 'react-hook-form';
@@ -8,7 +9,7 @@ import { FormProvider, FCheckBox, FTextField } from './form';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 export default function LoginPage() {
-  const [showPassword, setShowPassword] = React.useState(false);
+  const [showPassword, setShowPassword] = useState(false);
   const defaultValues = {
     email: 'minhhc@gmail.com',
     password: '123',
@@ -35,7 +36,7 @@ export default function LoginPage() {
   };
 
   navigate("/");
-    
+
   return (
     <Modal
     open={isOpen} onClose={() => navigate("/")}
