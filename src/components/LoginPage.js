@@ -49,8 +49,8 @@ export default function LoginPage() {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '100vh', // Full viewport height
-        backgroundColor: '#f5f5f5', // Optional: Add a background color
+        height: '100vh', 
+        backgroundColor: '#f5f5f5', 
       }}
     >
       <Box

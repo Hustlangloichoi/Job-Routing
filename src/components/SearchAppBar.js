@@ -9,7 +9,7 @@ import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
 import LoginIcon from '@mui/icons-material/Login';
 import { Button } from '@mui/material';
-import { Link } from 'react-router-dom'; // Import Link for navigation
+import { Link } from 'react-router-dom';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -79,8 +79,8 @@ export default function SearchAppBar() {
             color="inherit"
             variant="outline"
             startIcon={<LoginIcon />}
-            component={Link} // Use Link for navigation
-            to="/login" // Navigate to /login
+            component={Link} 
+            to="/login" 
           >
             Sign in
           </Button>
